@@ -22,3 +22,18 @@ document.getElementById("search-btn").addEventListener("click",()=>{
         res.textContent="No results found.";
     }
 });
+document.body.style.backgroundColor="white";
+const button = document.getElementById("changeColorBtn");
+button.addEventListener("click", () => {
+    if(document.body.style.backgroundColor == "plum"){
+        document.body.style.backgroundColor="white";}
+    else {document.body.style.backgroundColor="plum";}
+});
+
+
+
+const form = document.querySelector(".contact-form");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Thank you for sending your love to BTS! We'll make sure they feel it!");
+});
